@@ -11,20 +11,19 @@
   <body>
     <section class="section-search">
       <div class="container">
-       <form class="search-form">
+       <form class="search-form js-search-form">
           <div class="search">
-            <input type="text" class="input" placeholder="Search images..." id="datetime-picker" />
-            <button type="button" class="startBtn">Search</button>
+            <input type="text" class="input"   name="searchKeyword" placeholder="Search images..." id="datetime-picker" />
+            <button type="submit" class="startBtn">Search</button>
           </div>
         </form>
       </div>
-      <div class="cont-loader">
+      <div class="cont-loader is-loader is-hidden">
         <span class="loader"></span>
         <p class="loader-text">Loading image, please wait...</p>
       </div>
     </section>
-    <ul class="list"></ul>
+    <ul class="list js-gallery"></ul>
     <script type="module" src="./js/main.js"></script>
   </body>
   </html>
-  

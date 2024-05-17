@@ -50,5 +50,5 @@ export const createMarkupItem = images => {
         
         lightbox.refresh();
     }
-    console.log("🚀 ~ createMarkupItem ~ createMarkupItem:", createMarkupItem)
+    
     
