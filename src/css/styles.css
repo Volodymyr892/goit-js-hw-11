@@ -22,11 +22,17 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-.markup-info{
+/* .markup-info{
   display: flex;
   flex-wrap: wrap
 }
 .item-list{
   display: flex;
   flex-wrap:
+} */
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px ;
 }
