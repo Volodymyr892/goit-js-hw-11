@@ -40,14 +40,14 @@ export const createMarkupItem = images => {
             </li>
             `
            } ).join("");
-           lightbox = new SimpleLightbox('.item-list-link', {
-               captionsData: 'alt', 
-               captionDelay: 250 ,
-               overlayOpacity: 0.8,
-           });
            
-           lightbox.refresh();
+        }
+        lightbox = new SimpleLightbox('.item-list-link', {
+            captionsData: 'alt', 
+            captionDelay: 250 ,
+            overlayOpacity: 0.8,
+        });
         
-    }
-    
+        lightbox.refresh();
+        
     console.log("🚀 ~ createMarkupItem ~ createMarkupItem:", createMarkupItem) 

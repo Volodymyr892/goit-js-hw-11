@@ -38,7 +38,7 @@ img {
 .container{
   padding-top: 0;
   width: 100%;
-  max-width: 1128px;
+  max-width: 1190px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -51,7 +51,7 @@ img {
 }
 .item-list{
   height: 200px;
-  width: 300px;
+  width: 360px;
   border: 1px solid #808080;
 }
 .markup-info{
@@ -62,7 +62,7 @@ img {
 }
 .item-list-img{
   height: 152px;
-  width: 300px;
+  width: 360px;
 }
 .item-list-title{
   text-align: center;
