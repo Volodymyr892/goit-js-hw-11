@@ -16,7 +16,8 @@ export const createMarkupItem = images => {
         }) => { return`
             <li class="item-list">
             <a href="${largeImageURL}" class="item-list-link">
-            <img class="item-list-img" src="${webformatURL}" alt="${tags}">
+            <img class="item-list-img"  height="152"
+            width="300" src="${webformatURL}" alt="${tags}">
         </a>
         <div class='markup-info'>
         <div class="item-list-info-text">
