@@ -4,7 +4,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 export const createMarkupItem = images => {
    
-     images.map(
+     return images.map(
         ({
             webformatURL,
             largeImageURL,
@@ -13,7 +13,7 @@ export const createMarkupItem = images => {
             views,
             comments,
             downloads,
-        }) => { `
+        }) => { return`
             <li class="item-list">
         <a href="${largeImageURL}" class="item-list-link">
             <img class="item-list-img"  height="152"

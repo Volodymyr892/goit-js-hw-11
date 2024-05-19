@@ -41,6 +41,8 @@ function onSearchFormSubmit(event){
       }
 
       galleryEl.innerHTML = createMarkupItem(imagesData.hits);
+      
+
     })
     .catch(error => console.log(error))
     .finally(() => {
