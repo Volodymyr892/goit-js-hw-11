@@ -1,5 +1,5 @@
-import { fetchPhotosByQuery } from "./pixabay-api";
-import { createMarkupItem } from ".//render-functions";
+import { fetchPhotosByQuery } from "./js/pixabay-api";
+import { createMarkupItem } from "./js/render-functions";
 
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
@@ -42,7 +42,6 @@ function onSearchFormSubmit(event){
 
       galleryEl.innerHTML = createMarkupItem(imagesData.hits);
       
-
     })
     .catch(error => console.log(error))
     .finally(() => {

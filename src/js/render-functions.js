@@ -41,13 +41,13 @@ export const createMarkupItem = images => {
             `
            }).join("");
            
-           lightbox = new SimpleLightbox('item-list a', {
+           
+           lightbox = new SimpleLightbox('ul.list a', {
                captionsData: 'alt', 
                captionDelay: 250 ,
                overlayOpacity: 0.8,
            }).refresh();
         return lightbox;
-           
-};
+        };
         
         
