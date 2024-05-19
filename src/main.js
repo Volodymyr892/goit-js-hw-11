@@ -4,9 +4,18 @@ import { createMarkupItem } from "./js/render-functions";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const searchFormEl = document.querySelector('.js-search-form');
 const galleryEl = document.querySelector('.js-gallery');
 const loaderEl = document.querySelector('.js-loader');
+
+ const lightbox = new SimpleLightbox('ul.list a', {
+  captionsData: 'alt', 
+  captionDelay: 250 ,
+  overlayOpacity: 0.8,
+})
 
 function onSearchFormSubmit(event){
     
@@ -41,6 +50,7 @@ function onSearchFormSubmit(event){
       }
 
       galleryEl.innerHTML = createMarkupItem(imagesData.hits);
+      lightbox.refresh()
       
     })
     .catch(error => console.log(error))

@@ -1,6 +1,3 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
 
 export const createMarkupItem = images => {
    
@@ -40,14 +37,7 @@ export const createMarkupItem = images => {
             </li>
             `
            }).join("");
-           
-           
-           lightbox = new SimpleLightbox('ul.list a', {
-               captionsData: 'alt', 
-               captionDelay: 250 ,
-               overlayOpacity: 0.8,
-           }).refresh();
-        return lightbox;
+        
         };
         
         
