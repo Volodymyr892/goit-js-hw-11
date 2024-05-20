@@ -1,10 +1,10 @@
 const API_KEY = '43948978-860dfecfaa788bc4b5c828749';
 const BASE_URL = 'https://pixabay.com/api/';
 
-export const fetchPhotosByQuery = (query = 'pug') => {
+export const fetchPhotosByQuery = query  => {
   const searchParams = new URLSearchParams({
+    q: query,
     key: API_KEY ,
-    query,
     image_type: 'photo',
     orientation: 'horizontal',
     safesearch: true,
